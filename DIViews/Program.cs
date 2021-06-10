@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DependencyInjection
+namespace DIViews
 {
     public class Program
     {
@@ -18,12 +18,6 @@ namespace DependencyInjection
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-             //.ConfigureAppConfiguration((hostingContext, config) =>
-             //{
-             //    config.AddJsonFile("samplemodel.json",
-             //        optional: false,
-             //        reloadOnChange: true);
-             //})
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

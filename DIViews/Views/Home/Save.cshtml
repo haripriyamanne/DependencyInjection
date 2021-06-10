@@ -1,0 +1,19 @@
+﻿@using DIViews.Models
+@model DIViews.Models.Profile
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <label asp-for="Name" class="control-label"></label><b>: @Model.Name</b> <br />
+        <label asp-for="Gender" class="control-label"></label><b>: @Model.Gender </b><br />
+        @*<label asp-for="State" class="control-label"></label><b>: @Model.State </b><br />*@
+        <label asp-for="FavColor" class="control-label"></label><b>: @Model.FavColor </b><br />
+
+    </div>
+</div>

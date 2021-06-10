@@ -14,9 +14,9 @@ namespace DependencyInjectionServices.Controllers
     [Route("di")]
     public class DIController : Controller
     {
-        protected readonly ISingletonService _singletonService;
-        protected readonly IScopedService _scopedService;
-        protected readonly ITransientService _transientService;
+        private  ISingletonService _singletonService;
+        private  IScopedService _scopedService;
+        private  ITransientService _transientService;
 
         public DIController(ISingletonService singletonService, IScopedService scopedService, ITransientService transientService)
         {
