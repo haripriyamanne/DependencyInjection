@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DependencyInjectionServices.Controllers
 {
-    [Route("di")]
+   
     public class DIController : Controller
     {
         private  ISingletonService _singletonService;

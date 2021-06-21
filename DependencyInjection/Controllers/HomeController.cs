@@ -14,7 +14,7 @@ namespace DependencyInjection.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IDateTime _dateTime;
+        private  IDateTime _dateTime;
 
         public HomeController(IDateTime dateTime)
         {
